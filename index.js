@@ -2,16 +2,9 @@ const express = require('express');
 
 const server = express();
 
-var reqCounts = 0;
-
 server.use(express.json());
 
-// Query Params = ?teste=1
-// Route Params = /users/1
-// Request body = { "name": "Manoel", "email": "mmalafaia@gmail.com"}
-
-// CRUD - Create, Read, Update and Delete
-
+let reqCounts = 0;
 const projects = [
   {
     id: "1",
